@@ -1,0 +1,91 @@
+#projetos {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--color-neutral-0);
+    z-index: 0;
+}
+
+.dark-mode #projetos {
+    background-color: var(--color-neutral-1);
+}
+
+#slides {
+
+    margin-top: 2rem;
+
+}
+
+#slide-img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 50rem;
+    object-fit: cover;
+}
+
+.slide {
+    width: 50rem;
+    background: var(--color-primary-1);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 3rem 0rem;
+    padding: 0rem 1rem 0rem 1rem;
+
+}
+
+.slide-title {
+    margin-top: 2rem;
+    color: var(--color-primary-0);
+    font-size: 1.563rem;
+}
+
+.slide-description {
+    margin: 2rem 0rem 2rem 0rem;
+    text-align: center;
+    max-width: 40vw;
+    color: var(--color-neutral-1);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ferramentas i {
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: .5rem;
+    font-size: 1.5rem;
+    color: var(--color-primary-0);
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .dish {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}

@@ -1,0 +1,127 @@
+#contato {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-2);
+}
+
+#contato .section-subtitle {
+    color: var(--color-neutral-1);
+}
+
+#contato .content {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+    background-color: var(--color-primary-1);
+    width: 350px;
+    height: 430px;
+    padding: 1rem 1rem 0rem 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+form input {
+    border: solid 2px var(--color-primary-5);
+    color: var(--color-neutral-1);
+    background-color: #ffff6650;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+form textarea {
+    border: solid 2px var(--color-primary-5);
+    color: var(--color-neutral-1);
+    background-color: #ffff6650;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: 1rem 0rem 1rem 0rem;
+    max-width: 320px;
+    min-width: 320px;
+    max-height: 100px;
+    min-height: 150px;
+}
+
+form textarea::placeholder,
+form input::placeholder {
+
+    color: var(--color-primary-5);
+    font-size: .9em;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+form button {
+    color: var(--color-primary-1);
+    background-color: var(--color-primary-0);
+    text-transform: capitalize;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 8.2rem 1rem 8.2rem;
+    cursor: pointer;
+    transition: ease .2s;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+form button:hover {
+    color: var(--color-neutral-1);
+    background: var(--color-primary-2);
+}
+
+.card {
+    display: flex;
+    position: relative;
+    background-color: var(--color-neutral-1);
+
+    padding: 1rem;
+    width: 400px;
+    height: 200px;
+    margin-left: 10rem;
+    top: 1rem;
+
+}
+
+.card h3 {
+    color: var(--color-primary-1);
+    font-weight: 500;
+    line-height: 1.8;
+    align-items: center;
+    position: relative;
+    margin-left: 1rem;
+    width: 50%;
+
+
+}
+
+.card span {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--color-neutral-0);
+}
+
+.card img {
+    border-right: solid .3rem var(--color-primary-0);
+
+    align-items: center;
+    position: relative;
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+
+
+}

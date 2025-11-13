@@ -1,0 +1,11 @@
+footer {
+    padding: 1rem;
+    background-color: var(--color-primary-6);
+    width: 100vw;
+}
+
+.dark-mode footer {}
+
+footer span {
+    color: var(--color-primary-1);
+}

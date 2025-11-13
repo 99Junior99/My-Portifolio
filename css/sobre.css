@@ -32,15 +32,21 @@
 
 }
 
-#cta .title {
-
+#cta .title.active {
+    display: block;
     color: var(--color-primary-0);
     font-size: 4rem;
-
+    width: 100%;
 
 }
 
-.dark-mode #cta .title {}
+#cta #nav-btn.active {
+    display: none;
+}
+
+#cta .title {
+    display: none;
+}
 
 #cta .title span {
     padding: 0rem 1rem 0rem 1rem;
@@ -158,26 +164,55 @@
 }
 
 @media screen and (max-width:1170px) {
-    #home {
+    #sobre {
+
+        margin-top: -5rem;
         min-height: 100%;
-        padding-top: 0px;
+
+
     }
 
-    #banner,
-    #banner img,
-    #home .shape {
-        display: none;
+    #container3D canvas {
+
+        top: 5rem;
+        left: 20rem;
+        height: 70vh !important;
+        width: 70vw !important;
+    }
+
+    .credit {
+        width: 40%;
+        left: 40rem;
+        position: absolute;
     }
 
     #cta {
-        width: 100%;
-        text-align: center;
+
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+
+        text-align: start;
         align-items: center;
+    }
+
+    #cta .title {
+        font-size: 3.5rem;
+    }
+
+    .shape {
+        bottom: 5rem;
+    }
+
+    .neon {
+        height: 100%;
     }
 }
 
-@media screen and (max-width:450px) {
-    #phone_button button {
+@media screen and (max-width:750px) {
+    #banner {
         display: none;
     }
+
+
 }

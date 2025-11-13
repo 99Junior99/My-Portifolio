@@ -83,12 +83,19 @@ function animate() {
     // Adicione aqui qualquer atualização extra da cena, se quiser
 
     // Rotação automática e suave
-    if (object && objToRender === "car") {
-        // Rotação contínua em Y (horizontal)
-        object.rotation.y += 0.01; // ajuste a velocidade aqui (0.01 é bem suave)
-        object.rotation.x = -1 + mouseY / window.innerHeight * 2.9;
 
+
+    if (object && objToRender === "car") {
+        // Rotação contínua no eixo Y (horizontal)
+        object.rotation.y += 0.01; // velocidade da rotação
+
+        // Rotação suave e única no eixo X até um limite (por exemplo, 15°)
+        const maxXRotation = Math.PI / 12; // ~15 graus
+        if (object.rotation.x < maxXRotation) {
+            object.rotation.x += .5; // velocidade da rotação em X
+        }
     }
+
 
     // Renderiza a cena
     renderer.render(scene, camera);

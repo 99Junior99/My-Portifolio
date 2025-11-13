@@ -7,6 +7,7 @@ $(document).ready(function () {
     const sections = $('section');
     const navItems = $('.nav-item');
 
+    //scroll da tela
     $(window).on('scroll', function () {
         const header = $('header');
         const scrollPosition = $(window).scrollTop() - header.outerHeight();

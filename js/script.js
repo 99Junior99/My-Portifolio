@@ -35,6 +35,7 @@ $(document).ready(function () {
         $(navItems[activeSectionIndex]).addClass('active');
     });
 
+    //fade in de elementos
     ScrollReveal().reveal('#cta', {
         origin: 'left',
         duration: 2000,
@@ -47,14 +48,20 @@ $(document).ready(function () {
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#testimonial_chef', {
+    ScrollReveal().reveal('.card', {
         origin: 'left',
         duration: 1000,
         distance: '20%'
     })
 
-    ScrollReveal().reveal('.feedback', {
+    ScrollReveal().reveal('.card2', {
         origin: 'right',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('form', {
+        origin: 'top',
         duration: 1000,
         distance: '20%'
     })

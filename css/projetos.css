@@ -17,9 +17,9 @@
 }
 
 #slides {
-
+    display: block;
     margin-top: 2rem;
-
+    flex-direction: row;
 }
 
 #slide-img {
@@ -68,21 +68,31 @@
 
 @media screen and (max-width: 1170px) {
 
+    #slide-img,
+    .slide {
+        width: 45rem;
+    }
 
     #slides {
         flex-wrap: wrap;
         justify-content: center;
+
 
     }
 
 
 }
 
+@media screen and (max-width: 800px) {
+
+    #slide-img,
+    .slide {
+        width: 30rem;
+    }
+}
 
 @media screen and (max-width: 650px) {
-    .slide {
-        width: 100%;
-    }
+
 
     #menu .section-subtitle {
         text-align: center;

@@ -30,6 +30,7 @@
     margin-top: 5%;
     z-index: 9;
 
+
 }
 
 #cta .title.active {
@@ -77,7 +78,10 @@
 
 #cta_buttons {
     display: flex;
-    gap: 24px;
+
+    position: relative;
+    gap: 12px;
+
 }
 
 #cta_buttons a {
@@ -174,34 +178,34 @@
 
     #container3D canvas {
 
-        top: 5rem;
+        top: 10rem;
         left: 20rem;
-        height: 70vh !important;
-        width: 70vw !important;
+        height: 80vh !important;
+        width: 80vw !important;
     }
 
     .credit {
-        width: 40%;
-        left: 40rem;
+        top: 70%;
+        width: 30%;
+        left: 35rem;
         position: absolute;
     }
 
     #cta {
 
-        margin-top: 5%;
-        margin-bottom: 5%;
-
-
+        position: relative;
+        margin-top: 10rem;
         text-align: start;
         align-items: center;
     }
 
-    #cta .title {
+    #cta .title.active {
         font-size: 3.5rem;
     }
 
     .shape {
-        bottom: 5rem;
+
+        margin-top: 7rem;
     }
 
     .neon {
@@ -209,9 +213,36 @@
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 955px) {
+
+    .shape {
+        height: 45%;
+    }
+
+    #cta .title.active {
+        margin-bottom: 2rem;
+    }
+
+    #cta_buttons {
+        right: 12vw;
+        gap: 12px;
+        top: 1rem;
+
+    }
+
     #banner {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    #cta .title.active {
+        font-size: 2.5rem;
+    }
+
+    .shape {
+        height: 40%;
     }
 
 

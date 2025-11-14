@@ -6,6 +6,7 @@
     justify-content: center;
     background: url('/images/bg2/525.jpg');
     background-size: 100vw;
+    background-repeat: no-repeat;
 }
 
 #contato .section-title {
@@ -195,18 +196,21 @@ form button:hover {
     }
 }
 
-@media screen and (max-width: 980px)and (max-height:1600px) {
-    #banner {
-        display: none;
+@media screen and (max-width: 1170px)and (max-height:1600px) {
+    #contato {
+        background-size: 100vw 100%;
+        object-fit: cover;
     }
 
     .cards {
-        display: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card,
+    .card2 {
+        height: 12rem;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .cards {
-        display: none;
-    }
-}
+@media screen and (max-width: 650px) {}

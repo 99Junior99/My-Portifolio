@@ -45,8 +45,6 @@ header.dark-mode {
     font-weight: 600;
 }
 
-.dark-mode .nav-item a {}
-
 .nav-item.active a {
     color: var(--color-neutral-1);
 
@@ -88,6 +86,7 @@ header.dark-mode {
     display: none;
 }
 
+/*responsividade*/
 @media screen and (max-width:1170px) {
 
     #nav_list,
@@ -95,7 +94,12 @@ header.dark-mode {
         display: none;
     }
 
+    #dec {
+        font-size: 2rem;
+    }
+
     #darkModeToggle {
+        font-size: 2rem;
         margin: 0px 60px 0px 0px;
     }
 

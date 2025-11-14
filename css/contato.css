@@ -168,6 +168,7 @@ form button:hover {
 
 }
 
+/*responsividade*/
 @media screen and (max-width: 980px) {
     #contato .content {
         display: flex;
@@ -207,10 +208,12 @@ form button:hover {
         flex-direction: column;
     }
 
+    .card {
+        font-size: .9rem;
+    }
+
     .card,
     .card2 {
         height: 12rem;
     }
 }
-
-@media screen and (max-width: 650px) {}

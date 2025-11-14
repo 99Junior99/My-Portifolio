@@ -89,6 +89,7 @@ section {
     font-size: 2.1875rem;
 }
 
+/*responsividade*/
 @media screen and (max-width:1170px) {
     body::before {
         background-size: 100vw 15%;

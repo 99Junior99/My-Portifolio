@@ -66,6 +66,7 @@
     color: var(--color-primary-0);
 }
 
+/*responsividade*/
 @media screen and (max-width: 1170px) {
 
     #slide-img,

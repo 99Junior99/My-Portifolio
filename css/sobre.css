@@ -210,10 +210,14 @@
     }
 
     #cta .title.active {
-        font-size: 3.5rem;
-        width: 40vw;
+        font-size: 3rem;
+        height: 10vh;
         position: relative;
-        right: 10rem;
+        right: 1rem;
+    }
+
+    #cta .title span {
+        font-size: 2.5rem;
     }
 
     #cta_buttons {

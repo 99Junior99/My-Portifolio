@@ -196,7 +196,7 @@ form button:hover {
     }
 }
 
-@media screen and (max-width: 1170px)and (max-height:1600px) {
+@media screen and (max-width: 1170px)and (max-height:2000px) {
     #contato {
         background-size: 100vw 100%;
         object-fit: cover;

@@ -4,8 +4,6 @@ footer {
     width: 100vw;
 }
 
-.dark-mode footer {}
-
 footer span {
     color: var(--color-primary-1);
 }

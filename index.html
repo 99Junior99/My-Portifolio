@@ -15,8 +15,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.180.0/three.tsl.js"
         integrity="sha512-pVsOWriwN/5X/FWYhtqqQLnD+3cm8W1YqGrNrfkKgp+GMykFl7fZ0vorWpckUlZOVIG1tNVnI3D7T8DSea5TQg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "uSVGIS4zJIXwywAAy",
+            });
+        })();
+    </script>
     <title>Portifolio Junior337</title>
 
 </head>
@@ -178,15 +188,19 @@
             <div class="content">
                 <div id="email">
 
-                    <form id="form" method="POST">
+                    <form id="form" method="POST" action="https://formsubmit.co/ajax/joseinadilsonjunior@gmail.com"
+                        data-form>
                         <input type="hidden" name="access_key" value="7f684658-3edb-46b8-b265-9dd68b01f61a">
 
 
-                        <input type="text" name="name" placeholder="Seu Nome" required>
-                        <input type="email" name="email" placeholder="Seu Email" required>
-                        <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                        <input id="nome" type="text" name="name" placeholder="Nome:" required>
+                        <input id="email" for="email" name="email" placeholder="Email:" required>
+                        <input id="assunto" for="subject" name="subject" placeholder="Assunto:" required>
+                        <textarea id="mensagem" name="message" placeholder="Mensagem:" required></textarea>
+
+
                         <div class="result" id="result"></div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" onclick="sendMail()">Enviar</button>
                     </form>
                 </div>
                 <div class="cards">
@@ -221,6 +235,7 @@
     <script src="/js/script.js"></script>
     <script type="module" src="/js/3D.js"></script>
     <script src="/js/slider.js"></script>
+    <script src="form"></script>
 
 </body>
 
